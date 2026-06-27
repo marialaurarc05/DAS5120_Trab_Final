@@ -46,6 +46,7 @@ title('Torque Mecânico x Corrente');
 xlabel('Corrente i (A)');
 ylabel('Torque T_m (Nm)');
 
+exportgraphics(gcf, 'grafico.pdf', 'ContentType', 'vector');
 %%
 
 
