@@ -65,3 +65,23 @@ f = @(x) [R*x(1) - (V0 - Km*x(2)); ...
 sol = fsolve(f, [0.5, 5]);
 fprintf('i0 = %.4f A,  w0 = %.4f rad/s\n', sol(1), sol(2));
 
+%%
+%-----------------QUESTÃO 2------------------------------
+% Plot questão 2
+
+figure(1)
+plot(out.corrente.Time, out.corrente.Data, 'LineWidth', 1.5)
+grid on
+xlim([0 125])
+xlabel('Tempo (s)')
+ylabel('Corrente (A)')
+title('Corrente no Ponto de Operação')
+
+% Gráfico da Velocidade
+figure(2)
+plot(out.velocidade.Time, out.velocidade.Data, 'r', 'LineWidth', 1.5)
+grid on
+xlim([0 125])
+xlabel('Tempo (s)')
+ylabel('Velocidade angular (rad/s)')
+title('Velocidade Angular no Ponto de Operação')
