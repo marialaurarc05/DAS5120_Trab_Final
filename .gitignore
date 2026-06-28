@@ -1,0 +1,15 @@
+# Pastas de cache e build do Simulink
+slprj/
+
+# Arquivos de cache do Simulink
+*.slxc
+
+# Arquivos de autosave do Simulink
+*.autosave
+
+# Arquivos de autosave de scripts MATLAB
+*.asv
+
+# Arquivos de log e erros (opcional, mas recomendado)
+*.log
+*.err
